@@ -1,39 +1,49 @@
-# CRISP-DM Process
+# CRISP-DM Process #
 
-The research follows six phases of the CRISP-DM methodology.
+This research uses CRISP-DM to organize the steps of the study. There are six phases used in this research.
 
-## 1. Security Understanding
+## 1. Business Understanding
 
-The research problem and comparison criteria are defined. The study focuses on comparing anonymization, differential privacy, and federated learning.
+The first phase focuses on the research problem. In this study, the problem is the lack of a direct comparison between k-Anonymity and Differential Privacy.
+
+The comparison uses three main criteria:
+
+- Accuracy
+- Re-identification Risk
+- Execution Time
 
 ## 2. Data Understanding
 
-The UCI Adult Census Income dataset is studied to understand its attributes, quasi-identifiers, and sensitive attributes.
+This phase focuses on the UCI Adult Census Income dataset. The dataset is studied to understand its attributes and identify the attributes needed for the privacy comparison.
 
 ## 3. Data Preparation
 
-The dataset is prepared using the custom Python implementation `anonymization_framework.py`.
+The dataset is prepared before applying the two techniques.
 
-The implementation applies:
-
-- k-Anonymity
-- Differential Privacy
-- Federated-learning-inspired anonymization
+For k-Anonymity, generalization is applied using a `k = 3` configuration. For Differential Privacy, Laplace noise is added using `ε = 1.0`.
 
 ## 4. Modelling
 
-Each privacy-preserving technique is applied separately to the dataset based on the selected configurations.
+k-Anonymity and Differential Privacy are applied separately to the same dataset.
+
+Each technique produces a processed version of the dataset for comparison.
 
 ## 5. Evaluation
 
-The results are compared using classification accuracy, privacy level, re-identification risk, and execution time.
+The results are compared with the original dataset.
+
+The main evaluation metrics are:
+
+- Accuracy
+- Re-identification Risk
+- Execution Time
 
 ## 6. Deployment
 
-The final results are organised into a comparative framework and documented in the research report and GitHub repository.
+The final results are organised and presented as a comparison between k-Anonymity and Differential Privacy.
 
-## Process Flowchart
+## CRISP-DM Process Flowchart
 
 **Figure 3.2. CRISP-DM Process Flowchart**
 
-<img width="1024" height="1245" alt="CRISP_DM Process Flowchart" src="https://github.com/user-attachments/assets/6c7c3bd7-2718-413e-95eb-f671eebbcd43" />
+<img width="1019" height="1029" alt="CRISP_DM Process Flowchart" src="https://github.com/user-attachments/assets/6b322c20-78b1-4e57-a5fc-dc61bd2445d2" />
