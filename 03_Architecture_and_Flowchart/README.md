@@ -1,8 +1,22 @@
-# Methodology
+# Chapter 3: Methodology #
 
-This study follows the CRISP-DM methodology to compare two privacy-preserving techniques in big data systems.
+## Overview
 
-## Research Process
+This folder contains the materials for Chapter 3 of this research.
+
+This research uses a data-driven approach with the CRISP-DM methodology. The main purpose is to compare k-Anonymity and Differential Privacy using the UCI Adult Census Income dataset.
+
+The original dataset is used as the baseline. After that, both techniques are applied separately and the results are compared.
+
+The comparison focuses on:
+
+- Accuracy
+- Re-identification Risk
+- Execution Time
+
+## CRISP-DM Phases
+
+The research follows six phases:
 
 1. Business Understanding
 2. Data Understanding
@@ -11,21 +25,15 @@ This study follows the CRISP-DM methodology to compare two privacy-preserving te
 5. Evaluation
 6. Deployment
 
-## Dataset
+## Files in This Folder
 
-- UCI Adult Census Income Dataset
+- `Research_Methodology.md`
+- `Development_Model.md`
+- `CRISP_DM_Process.md`
+- `System_Architecture.md`
+- `Data_Collection.md`
+- `Evaluation_Plan.md`
+- `Timeline.md`
+- `Ethics_and_Legal.md`
 
-## Privacy Techniques
-
-- k-Anonymity
-- Differential Privacy
-
-## Evaluation Metrics
-
-- Classification Accuracy
-- Re-identification Risk
-- Execution Time
-
-## Expected Outcome
-
-A comparative evaluation that identifies the strengths and limitations of k-anonymity and differential privacy under the same dataset and evaluation criteria, particularly in terms of privacy protection, data utility, and computational performance.
+These files contain the details of the methodology, system architecture, CRISP-DM process, evaluation plan, timeline, and ethical considerations used in this research.
