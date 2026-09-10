@@ -1,11 +1,11 @@
 # Data Collection #
 
-- The research uses the UCI Adult Census Income dataset as the main benchmark dataset.
+- The main dataset used in this research is the UCI Adult Census Income dataset.
 
-- The dataset contains demographic and income-related attributes such as age, education, occupation, marital status, and income.
+- The dataset contains information such as age, education, occupation, marital status, and income. It is selected because previous studies have also used the UCI Adult dataset to test k-Anonymity and Differential Privacy.
 
-- The dataset is selected because it has been used in previous privacy-preserving studies and allows the three techniques to be tested under the same dataset.
+- In this research, the same dataset is used for both techniques. The original dataset is used as the baseline before applying k-Anonymity and Differential Privacy.
 
-- The dataset is processed locally using the custom Python implementation `anonymization_framework.py`.
+- The dataset is processed locally using the custom Python script `anonymization_framework.py`.
 
-- No new data is collected from human respondents.
+- No data is collected from human respondents. The dataset is obtained from the public UCI Machine Learning Repository.
