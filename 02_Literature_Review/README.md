@@ -1,18 +1,18 @@
-# Literature Review#
+# Literature Review #
 
-# Overview #
+## Overview
 
-This folder contains the supporting materials for Chapter 2 of the research proposal.
+This folder contains the supporting materials for **Chapter 2: Literature Review** of the research proposal.
 
-The literature review focuses on recent studies related to privacy-preserving techniques in big data systems. Based on the selected papers published between 2022 and 2026, three main techniques were identified:
+The literature review examines previous studies on privacy-preserving techniques in big data systems published between **2022 and 2026**. The review focuses on three main approaches:
 
 - Data Anonymization
 - Differential Privacy
 - Federated Learning
 
-The reviewed studies were analyzed to compare their approaches, benchmark datasets, evaluation metrics, and reported findings. These analyses support the proposed comparative framework used in this research.
+The selected studies are analyzed to identify the techniques used, benchmark datasets, evaluation metrics, key findings, and existing research gaps. These supporting materials provide the foundation for the proposed comparative framework presented in this research.
 
-# Folder Contents #
+## Folder Contents
 
 - Literature Review Analysis Table
 - Comparison of Existing Techniques
