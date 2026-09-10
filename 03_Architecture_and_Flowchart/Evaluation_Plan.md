@@ -1,16 +1,25 @@
-# Evaluation Plan #
+## Evaluation Plan
 
-- The three privacy-preserving techniques are evaluated using the same dataset and comparison criteria.
+The project evaluates k-anonymity and differential privacy using the same UCI Adult Census Income Dataset and consistent evaluation criteria.
 
-The main evaluation metrics are:
+### Evaluation Metrics
 
 | Metric | Purpose |
-|--------|---------|
-| Data Utility / Accuracy | Measures how useful the processed data remains |
-| Privacy Level | Shows the level of privacy protection |
-| Re-identification Risk (%) | Measures the possibility of identifying individuals |
-| Execution Time | Measures the processing time of each technique |
+|---|---|
+| Classification Accuracy (%) | Measures the data utility retained after applying each privacy-preserving technique |
+| Re-identification Risk (%) | Measures the likelihood of individuals being re-identified from the processed data |
+| Execution Time (ms) | Measures the processing time required by each technique |
 
-- The original UCI Adult dataset is used as the baseline.
+### Baseline
 
-- The results are compared to identify the differences in privacy protection, data utility, and processing performance.
+The original, unprotected UCI Adult Census Income Dataset is used as the baseline for comparison.
+
+### Comparison
+
+The results of k-anonymity and differential privacy are compared against the baseline to evaluate their differences in:
+
+- Privacy protection
+- Data utility
+- Computational performance
+
+The evaluation aims to provide a clear comparison of the strengths and limitations of k-anonymity and differential privacy under the same experimental conditions.
