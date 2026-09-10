@@ -1,9 +1,9 @@
 # Development Model #
 
-Not applicable.
+Not applicable :
 
-This study does not develop a new software system, tool, or prototype. Instead, it applies and compares existing privacy-preserving techniques using the UCI Adult Census Income dataset.
+- This study does not develop a new software system, tool, or prototype. It applies and compares two existing privacy-preserving techniques, k-Anonymity and Differential Privacy, using a benchmark dataset.
 
-A custom Python implementation, `anonymization_framework.py`, is used to apply the selected techniques and evaluate the results.
+- A custom evaluation script is used to apply the techniques and compare their results.
 
-Since the study focuses on comparative analysis rather than software development, a software development model is not required.
+- Since this study focuses on comparing existing techniques and not building a new system, a software development model is not required.
