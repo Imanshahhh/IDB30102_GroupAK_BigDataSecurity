@@ -1,10 +1,10 @@
-# Methodology #
+# Methodology
 
-This project follows the CRISP-DM methodology to compare three privacy-preserving techniques for big data systems.
+This study follows the CRISP-DM methodology to compare two privacy-preserving techniques in big data systems.
 
-## Research Process 
+## Research Process
 
-1. Security Understanding
+1. Business Understanding
 2. Data Understanding
 3. Data Preparation
 4. Modelling
@@ -17,17 +17,15 @@ This project follows the CRISP-DM methodology to compare three privacy-preservin
 
 ## Privacy Techniques
 
-- Data Anonymization
+- k-Anonymity
 - Differential Privacy
-- Federated Learning
 
 ## Evaluation Metrics
 
 - Classification Accuracy
-- Privacy Level
 - Re-identification Risk
 - Execution Time
 
 ## Expected Outcome
 
-A comparative framework that helps identify the strengths and limitations of each privacy-preserving technique under the same evaluation criteria.
+A comparative evaluation that identifies the strengths and limitations of k-anonymity and differential privacy under the same dataset and evaluation criteria, particularly in terms of privacy protection, data utility, and computational performance.
