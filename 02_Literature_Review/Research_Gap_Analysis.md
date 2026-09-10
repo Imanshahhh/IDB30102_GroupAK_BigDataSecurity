@@ -1,17 +1,19 @@
 # Research Gap Analysis #
 
-## Findings from Previous Studies
+From the studies reviewed, both k-Anonymity and Differential Privacy can protect sensitive data. However, both techniques have different effects on data utility.
 
-The literature review shows that:
+One common issue is the trade-off between privacy and accuracy. When stronger privacy protection is used, the accuracy or usefulness of the data may decrease. This can be seen from the results reported by Anoop et al. (2025).
 
-- Most studies evaluate only one privacy-preserving technique.
-- Different datasets and evaluation metrics are used across studies.
-- Cross-technique comparisons are still limited.
+Another issue is that many previous studies test k-Anonymity and Differential Privacy separately. They also use different datasets and evaluation methods. Because of this, it is not easy to compare the two techniques directly.
 
 ## Research Gap
 
-There is currently no standardized comparison that evaluates Data Anonymization, Differential Privacy, and Federated Learning using the same benchmark dataset and evaluation criteria.
+The main research gap is the lack of a clear comparison between k-Anonymity and Differential Privacy using the same dataset and evaluation criteria.
 
-## Proposed Research
+This research uses the UCI Adult Census Income dataset for both techniques. The results will be compared using:
 
-This study proposes a comparative framework that applies the three techniques to the UCI Adult Census Income dataset and evaluates them using consistent performance metrics.
+- Classification Accuracy
+- Re-identification Risk
+- Execution Time
+
+This comparison is used to see how k-Anonymity and Differential Privacy perform in terms of privacy protection, data utility, and processing time.
