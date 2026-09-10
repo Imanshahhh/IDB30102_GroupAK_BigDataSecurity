@@ -1,9 +1,18 @@
-# Ethical and Legal Considerations #
+# Ethics and Legal Considerations #
 
-- This research does not involve human respondents or live systems.
+- This research does not involve human respondents or any live system.
 
-- The study uses the publicly available UCI Adult Census Income dataset and processes it locally using the custom Python implementation.
+- The UCI Adult Census Income dataset used in this research is publicly available. The dataset is used only for the purpose of comparing k-Anonymity and Differential Privacy.
 
-- No new personal data is collected. The research only uses the data available in the selected public benchmark dataset.
+- The data is processed locally using the custom Python implementation `anonymization_framework.py`. No new personal data is collected for this research.
 
-- All testing is carried out in the group's own environment and no testing is performed on live or third-party systems.
+- All testing is done in the group's own environment. No testing is carried out on any live or third-party system.
+
+## Ethical Consideration
+
+- No human participants are involved in this research. The study only uses the selected public dataset for the experiment.
+
+## Legal Consideration
+
+- The dataset is obtained from the UCI Machine Learning Repository and is used for academic research purposes. The research does not access or test any third-party system.
+
