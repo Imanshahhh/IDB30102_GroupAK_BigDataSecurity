@@ -1,14 +1,14 @@
 # IDB30102 - Research Methodology
-## A Comparative Framework for Data Anonymization Techniques in Big Data Systems
+## A Comparative Evaluation of k-Anonymity and Differential Privacy in Big Data Systems
 
 ---
 
 ### 📌 Course & Project Information
 * **Course Code:** IDB30102
 * **Course Name:** Research Methodology
-* **Project Title:** A Comparative Framework for Data Anonymization Techniques in Big Data Systems
-* **Group Name / ID:** GROUP AK
-* **Assigned Research Area:** Data Privacy, Big Data Security & Privacy-Preserving Data Mining (PPDM)
+* **Project Title:** A Comparative Evaluation of k-Anonymity and Differential Privacy in Big Data Systems
+* **Group Name / ID:** Group K / GROUP AK
+* **Assigned Research Area:** Big Data Security & Data Privacy
 
 ---
 
@@ -25,95 +25,107 @@
 ### 📖 Project Overview
 
 #### **Research Problem**
-Modern big data systems process vast amounts of sensitive personal data under strict privacy regulations such as GDPR and PDPA. While data anonymization is essential to prevent user identification, traditional anonymization techniques often cause severe data distortion, severely degrading data utility for machine learning and analytical tasks. Organizations face a critical trade-off between maximizing privacy protection and retaining data usefulness.
+1. **Inconsistent Evaluation Standards (PS1):** $k$-Anonymity and Differential Privacy are frequently evaluated in literature using different metrics, experimental setups, and datasets, making direct comparative assessment difficult.
+2. **Lack of Benchmarking Criteria (PS2):** There is limited consistent comparison between the two techniques using unified criteria such as accuracy, re-identification risk, and execution time under identical conditions.
 
 #### **Research Aim**
-To design, implement, and benchmark a comprehensive comparative framework evaluating traditional and modern privacy-preserving anonymization techniques to determine the optimal trade-off between privacy protection, data utility, and computational efficiency in big data environments.
+To conduct a direct, standardized comparative evaluation of $k$-Anonymity and Differential Privacy in big data systems based on three key performance metrics: **classification accuracy**, **re-identification risk**, and **execution time**.
 
 #### **Research Objectives**
-1. **RO1:** To investigate and categorize existing data anonymization paradigms ($k$-Anonymity, Differential Privacy, and Federated Anonymization) through a systematic literature review.
-2. **RO2:** To design and implement a standardized Python-based evaluation framework that applies anonymization techniques to tabular datasets.
-3. **RO3:** To benchmark and quantitatively evaluate the privacy preservation level, data utility retention, execution performance, and re-identification risk across all candidate algorithms.
+1. **RO1:** To review existing literature on $k$-Anonymity and Differential Privacy techniques in big data systems.
+2. **RO2:** To implement $k$-Anonymity and Differential Privacy using a custom Python implementation (`anonymization_framework.py`) on the UCI Adult Census Income dataset.
+3. **RO3:** To evaluate and compare both techniques against the original, unprotected dataset using accuracy, re-identification risk, and execution time as primary metrics.
 
-#### **Proposed Solution**
-The proposed solution is a Python-driven modular benchmark framework that ingests raw tabular datasets and processes them through three anonymization engines:
-* **$k$-Anonymity ($k=3$):** Applies quasi-identifier suppression and age-range generalization.
-* **Differential Privacy ($\epsilon=1.0$):** Injects calibrated Laplace noise into numerical attributes.
-* **Federated Anonymization:** Simulates local edge-node noise addition prior to global aggregation.
+#### **Implementation Scope**
+The evaluation framework processes raw tabular data through two privacy-preserving techniques alongside an unprotected baseline:
+* **Baseline (Raw Data):** Unprotected original dataset.
+* **$k$-Anonymity ($k=3$):** Applies quasi-identifier generalization (age range categorization, marital-status grouping) and suppression.
+* **Differential Privacy ($\epsilon=1.0$):** Injects calibrated Laplace noise into numerical attributes to provide formal privacy guarantees.
 
 ---
 
 ### 🔬 Methodology & System Architecture
 
 #### **Research Methodology & Development Model**
-This research adopts the **CRISP-DM (Cross-Industry Standard Process for Data Mining)** process model, consisting of 6 phases: Business/Research Understanding, Data Understanding, Data Preparation, Modeling (Anonymization Engine), Evaluation, and Deployment/Documentation.
+This study adopts a data-driven research approach following the **CRISP-DM (Cross-Industry Standard Process for Data Mining)** framework, comprising 6 phases:
+1. **Business Understanding:** Define research problems, trade-off scope, and evaluation criteria.
+2. **Data Understanding:** Analyze UCI Adult Census Income dataset attributes and quasi-identifiers.
+3. **Data Preparation:** Preprocess tabular features and construct anonymization transformation functions.
+4. **Modelling:** Treat $k$-Anonymity and Differential Privacy as separate comparison treatments.
+5. **Evaluation:** Benchmark accuracy, re-identification risk, and processing time against baseline.
+6. **Deployment:** Document comparative results, findings, and maintain GitHub repository.
 
-#### **Proposed System Architecture**
-1. **Data Ingestion Module:** Loads raw input CSV datasets (e.g., adult census data).
-2. **Pre-processing Engine:** Separates Direct Identifiers, Quasi-Identifiers (QIs), and Sensitive Attributes.
-3. **Anonymization Execution Pipeline:**
-   * Branch A: $k$-Anonymity Pipeline (Generalization & Suppression)
-   * Branch B: Differential Privacy Pipeline (Laplace Noise Addition)
-   * Branch C: Federated Local Anonymization Pipeline (Distributed Noise Injection)
-4. **Evaluation & Metrics Module:** Computes Data Utility, Re-Identification Risk, and Execution Time.
-5. **Output Generator:** Exports benchmarked results to summary tables and log outputs.
-
+#### **System Architecture Workflow**
+```text
+                  [ UCI Adult Benchmark Dataset ]
+                                │
+        ┌───────────────────────┼───────────────────────┐
+        ▼                       ▼                       ▼
+┌──────────────┐     ┌─────────────────────┐     ┌──────────────┐
+│ Baseline     │     │ k-Anonymity         │     │ Differential │
+│ (Raw Data)   │     │ (k=3 Generalization)│     │ Privacy      │
+└──────┬───────┘     └──────────┬──────────┘     │ (ε=1.0 Noise)│
+       │                        │                └──────┬───────┘
+       ▼                        ▼                       ▼
+┌──────────────┐     ┌─────────────────────┐     ┌──────────────┐
+│ Metrics      │     │ Metrics             │     │ Metrics      │
+│ Eval Engine  │     │ Eval Engine         │     │ Eval Engine  │
+└──────┬───────┘     └──────────┬──────────┘     └──────┬───────┘
+       │                        │                       │
+       └────────────────────────┼───────────────────────┘
+                                ▼
+                   [ Comparative Evaluation ]
+                   (Accuracy, Re-ID, Time)
+                                │
+                                ▼
+                     [ Comparative Results ]
+```
 ---
 
-### 🧪 Proposed Evaluation Plan
+### 🧪 Evaluation Plan & Metrics
 
-* **Baseline:** Raw / Unanonymized Dataset (100% Utility, High Re-Identification Risk).
+* **Baseline:** Original unmodified UCI Adult dataset (100% Re-ID risk, zero privacy noise).
 * **Dataset / Test Environment:** 
-  * *Dataset:* Sample Census/Adult Tabular Dataset (`adult_sample.csv`).
-  * *Environment:* Python 3.8+ on Windows/Linux local runtime.
+  * *Dataset:* UCI Adult Census Income Benchmark Dataset (`adult_sample.csv`).
+  * *Environment:* Python 3.8+ running local execution environment.
 * **Evaluation Metrics:**
-  * **Data Utility (Accuracy):** Measured via mean absolute error (MAE) and accuracy retention rate (%).
-  * **Privacy Guarantee:** Formal mathematical guarantees ($\epsilon$-Differential Privacy, $k$-Indistinguishability).
-  * **Re-Identification Risk (%):** Percentage of unique records vulnerable to linkage attacks.
-  * **Computational Overhead:** Algorithm execution time measured in seconds (s).
+  * **Classification Accuracy (%):** Evaluates data utility retained after privacy treatment.
+  * **Re-Identification Risk (%):** Measures residual vulnerability to linkage attacks.
+  * **Execution Time (ms):** Measures computational performance and algorithm latency.
 
 ---
 
-### 💻 Tools & Technical Stack
+### 💻 Technical Stack
 
 * **Programming Language:** Python 3.8+
-* **Libraries & Frameworks:** `pandas`, `numpy`, `math`, `time`
-* **Datasets:** `adult_sample.csv` (Tabular Demographic Data)
-* **Development Environment:** VS Code / Jupyter Notebook / Git & GitHub
+* **Libraries:** `pandas`, `numpy`, `math`, `time`
+* **Benchmark Dataset:** UCI Adult Census Income Dataset (`adult_sample.csv`)
+* **Environment:** VS Code / Jupyter Notebook / Git & GitHub
 
 ---
 
-### 📂 Repository Structure & Technical Components
+### 📂 Repository Structure
 
-```text
-IDB30102_GROUP_AK_ResearchTopic/
-│
-├── README.md                           # Comprehensive project overview and instructions
-├── 01_Research_Papers/                 # Indexed list and DOIs of primary literature
-├── 02_Literature_Review/               # Synthesis matrix & literature review documentation
-├── 03_Architecture_and_Flowchart/      # System architecture & CRISP-DM flowcharts
-├── 04_Source_Code/                     # Python implementation of anonymization algorithms
-├── 05_Data_or_Sample_Input/            # Raw and sample datasets (e.g., adult_sample.csv)
-├── 06_Results_or_Expected_Output/      # Benchmarking logs, metric tables & execution outputs
-└── 07_References/                      # Full reference list formatted in APA 7th Edition
-```
-
-### 🛠️ Key Framework & Anonymization Methods
-* **$k$-Anonymity ($k=3$):** Suppresses sensitive identifiers (e.g., Age ranges, Zip Code grouping) to ensure each record is indistinguishable from at least $k-1$ other records.
-* **Differential Privacy ($\epsilon=1.0$):** Adds calibrated Laplace noise to numerical attributes (e.g., Income/Age) providing mathematical privacy guarantees against adversary inference.
-* **Federated Anonymization:** Simulates decentralized privacy mechanisms through distributed noise addition prior to global aggregation.
+* 📄 [README.md](./README.md) — *Comprehensive project overview and instructions*
+* 📁 [01_Research_Papers/](./01_Research_Papers/) — *Primary literature resources and references*
+* 📁 [02_Literature_Review/](./02_Literature_Review/) — *Literature review synthesis and matrix*
+* 📁 [03_Architecture_and_Flowchart/](./03_Architecture_and_Flowchart/) — *System architecture & CRISP-DM flowcharts*
+* 📁 [04_Source_Code/](./04_Source_Code/) — *Custom Python implementation (anonymization_framework.py)*
+* 📁 [05_Data_or_Sample_Input/](./05_Data_or_Sample_Input/) — *Benchmark datasets (adult_sample.csv)*
+* 📁 [06_Results_or_Expected_Output/](./06_Results_or_Expected_Output/) — *Metric evaluation logs, output figures, and tables*
+* 📁 [07_References/](./07_References/) — *Reference citations formatted in APA 7th Edition*
 
 ---
 
 ### 🚀 Getting Started & Running the Code
 
-#### **Prerequisites**
-Make sure you have Python 3.8+ installed along with the required libraries:
+#### **1. Installation**
+Ensure Python 3.8+ is installed, then install required dependencies:
 ```bash
 pip install pandas numpy
 ```
-#### **Execution**
-Navigate to the 04_Source_Code/ directory and run the main anonymization engine:
+#### **2. Execution**
+Navigate to the `04_Source_Code/` directory and execute the main anonymization engine:
 ```bash
 python main_anonymizer.py
 ```
@@ -123,13 +135,13 @@ python main_anonymizer.py
 ### **📊 Summary of Results**
 Preliminary benchmarking on the sample input dataset yielded the following performance metrics:
 
-| **Technique** | **Data Utility (Accuracy)** | **Privacy Level** | **Re-ID Risk (%)** | **Execution Time** |
-| :--- | :---: | :--- | :---: | :--- |
-| k-Anonymity ($k=3$) | Moderate (~33.3%) | Medium | High (~33.3%) | Very Fast (< 0.01s) |
-| Differential Privacy ($\epsilon=1.0$) | Low-Moderate | High | Low (~10.0%) | Fast (< 0.01s) |
-| Federated Anonymization | Moderate | High | Medium (~20.0%) | Moderate (~0.01s) |
+| **Technique / Treatment** | **Accuracy (%)** | **Re-ID Risk (%)** | **Execution Time (ms)** |
+| :--- | :---: | :--- | :--- |
+| Baseline (Raw Data) | 33.33% | 100.00% | 285.66 ms |
+| k-Anonymity ($k=3$) | 33.33%  | 60.00% | 114.34 ms |
+| Differential Privacy ($\epsilon=1.0$) | 33.33% | 90.00% | 110.57 ms |
 
 ---
 
 ### **📜 Acknowledgments & Citation**
-This project is submitted in partial fulfillment of the requirements for IDB30102 Research Methodology.
+This project is submitted to Dr. Delina Beh Mei Yin in partial fulfillment of the requirements for IDB30102 Research Methodology, Bachelor of Cybersecurity Technology with Honours, University of Kuala Lumpur (UniKL).
