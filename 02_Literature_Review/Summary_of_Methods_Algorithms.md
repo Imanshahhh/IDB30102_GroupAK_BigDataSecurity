@@ -1,25 +1,17 @@
 
-# Data Anonymization #
+# Summary of Methods and Algorithms #
 
-- k-Anonymity
-- l-Diversity
-- Generalization
-- Suppression
-- Mondrian k-Anonymity
+## Overview
 
-# Differential Privacy #
+The reviewed studies apply different methods to balance privacy protection and data utility.
 
-- Laplace Mechanism
-- Gaussian Mechanism
-- Secret Specification Based Differential Privacy (SSDP)
+| Technique | Methods / Algorithms |
+|-----------|----------------------|
+| Data Anonymization | k-Anonymity, Mondrian, l-Diversity |
+| Differential Privacy | Laplace Mechanism, SSDP, Random Quantization |
+| Federated Learning | Federated Averaging, Gradient Compression |
+| Hybrid Approaches | DP-CTGAN, Functional Encryption, Blockchain |
 
-# Federated Learning #
+## Summary
 
-- Federated Averaging
-- Hierarchical Federated Learning
-- Functional Encryption
-- Gradient Compression
-
-# Summary #
-
-These methods were identified from previous studies and form the basis for the comparative analysis in this research.
+Each technique offers different privacy and utility trade-offs. These differences support the need for a comparative evaluation framework using consistent datasets and evaluation criteria.
