@@ -19,7 +19,3 @@
 - Hierarchical Federated Learning
 - Functional Encryption
 - Gradient Compression
-
-# Summary #
-
-These methods were identified from previous studies and form the basis for the comparative analysis in this research.
