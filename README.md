@@ -5,7 +5,7 @@
 * **Course Code:** IDB30102
 * **Course Name:** Research Methodology
 * **Project Title:** A Comparative Framework for Data Anonymization Techniques in Big Data Systems
-* **Group Name / ID:GROUP AK
+* **Group Name** / ID:GROUP AK
 
 ---
 
