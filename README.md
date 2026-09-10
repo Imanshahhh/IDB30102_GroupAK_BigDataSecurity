@@ -1,5 +1,5 @@
 # IDB30102 - Research Methodology
-## A Comparative Framework for Data Anonymization Techniques in Big Data Systems
+## A Comparative Framework for Privacy-Preserving Techniques in Big Data Systems
 
 ### 📌 Course & Project Information
 * **Course Code:** IDB30102
