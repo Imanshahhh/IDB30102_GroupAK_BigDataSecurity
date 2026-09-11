@@ -31,13 +31,13 @@ The main criteria are:
 
 ## 3. Data Preparation
 
+
 - The dataset is prepared using the custom Python script `anonymization_framework.py`.
-
-- For k-Anonymity, generalization is applied using a `k = 3` configuration. Age is grouped into ranges and marital status is also generalized.
-
-- For Differential Privacy, Laplace noise is added using a privacy budget of `ε = 1.0`.
-
-- Two processed versions of the dataset are produced for the comparison.
+- For **k-Anonymity**, generalization and suppression are applied using a `k = 3` configuration:
+  - `age` is grouped into 10-year range bins (e.g., 20–29, 30–39).
+  - Any equivalence class smaller than `k` (based on `age` and `marital-status` as quasi-identifiers) is suppressed (removed) from the dataset.
+- For **Differential Privacy**, Laplace noise is added to numeric attributes using a privacy budget of `ε = 1.0`.
+- Two processed versions of the dataset are produced for the comparative evaluation, alongside the original unprotected dataset as the baseline.
 
 ## 4. Modelling
 
