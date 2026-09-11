@@ -4,9 +4,9 @@
 
 This folder contains the materials for Chapter 3 of this research.
 
-This research uses a data-driven approach with the CRISP-DM methodology. The main purpose is to compare k-Anonymity and Differential Privacy using the UCI Adult Census Income dataset.
+- This research uses a data-driven approach with the CRISP-DM methodology. The main purpose is to compare k-Anonymity and Differential Privacy using the UCI Adult Census Income dataset.
 
-The original dataset is used as the baseline. After that, both techniques are applied separately and the results are compared.
+- The original dataset is used as the baseline. After that, both techniques are applied separately and the results are compared.
 
 The comparison focuses on:
 
