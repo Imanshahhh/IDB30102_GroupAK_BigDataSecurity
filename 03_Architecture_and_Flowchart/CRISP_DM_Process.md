@@ -44,6 +44,7 @@ The final results are organised and presented as a comparison between k-Anonymit
 
 ## CRISP-DM Process Flowchart
 
-**Figure 3.2. CRISP-DM Process Flowchart**
+**Figure 3.2 CRISP-DM Process Flowchart**
 
-<img width="1019" height="1029" alt="CRISP_DM Process Flowchart" src="https://github.com/user-attachments/assets/6b322c20-78b1-4e57-a5fc-dc61bd2445d2" />
+<img width="525" height="618" alt="image" src="https://github.com/user-attachments/assets/9bb9de0d-d4ef-43f4-a043-28b68fe26bd1" />
+
