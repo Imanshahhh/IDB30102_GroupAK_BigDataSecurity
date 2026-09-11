@@ -104,7 +104,7 @@ This study adopts a data-driven research approach following the **CRISP-DM (Cros
 ### Evaluation Metrics
 
 * **Classification Accuracy (%):** Evaluates the data utility retained after privacy treatment.
-* **Re-Identification Risk (%):** Measures residual vulnerability to linkage attacks.
+* **Uniqueness-Based Risk Indicator (%):** Measures the proportion of records that belong to singleton quasi-identifier groups, indicating potential uniqueness and linkage risk.
 * **Execution Time (ms):** Measures computational performance and algorithm latency.
 
 ---
@@ -160,7 +160,7 @@ python run_evaluation.py
 
 Empirical evaluation executed on the local benchmark testbed (`04_Source_Code/run_evaluation.py`) yielded the following real-time performance metrics:
 
-| Technique / Treatment            | Classification Accuracy (%) | Re-Identification Risk (%) | Execution Time (ms) |
+| Technique / Treatment            | Classification Accuracy (%) | Uniqueness-Based Risk Indicator (%) | Execution Time (ms) |
 | :------------------------------- | :-------------------------: | :------------------------: | :-----------------: |
 | **Baseline (Raw Data)**          |          **84.04%**         |          **0.12%**         |     **0.00 ms**     |
 | **k-Anonymity (k=3)**            |          **84.67%**         |          **0.00%**         |     **18.00 ms**    |
