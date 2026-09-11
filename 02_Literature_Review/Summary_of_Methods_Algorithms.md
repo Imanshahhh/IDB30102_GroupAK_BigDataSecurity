@@ -16,14 +16,14 @@ The studies reviewed in Chapter 2 use different methods to protect sensitive dat
 
 ## Methods Used in This Research
 
-This research only implements two methods: k-Anonymity and Differential Privacy.
+- This research only implements two methods: k-Anonymity and Differential Privacy.
 
 ### k-Anonymity
 
-Standard k-anonymity is used with generalization and suppression. The aim is to reduce the chance of identifying individuals from the dataset.
+- Standard k-anonymity is used with generalization and suppression. The aim is to reduce the chance of identifying individuals from the dataset.
 
 ### Differential Privacy
 
-Standard Differential Privacy is used by adding Laplace noise to the data. The privacy budget used in this research is `ε = 1.0`.
+- Standard Differential Privacy is used by adding Laplace noise to the data. The privacy budget used in this research is `ε = 1.0`.
 
-The other methods are only discussed to support the literature review. They are not implemented in the experiment.
+- The other methods are only discussed to support the literature review. They are not implemented in the experiment.
