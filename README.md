@@ -7,7 +7,7 @@
 * **Course Code:** IDB30102
 * **Course Name:** Research Methodology
 * **Project Title:** A Comparative Evaluation of k-Anonymity and Differential Privacy in Big Data Systems
-* **Group Name / ID:** Group K / GROUP AK
+* **Group Name / ID:** GROUP AK
 * **Assigned Research Area:** Big Data Security & Data Privacy
 
 ---
