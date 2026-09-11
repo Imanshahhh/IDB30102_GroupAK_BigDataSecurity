@@ -2,15 +2,12 @@
 
 This table summarizes the selected studies reviewed in Chapter 2. The studies are compared based on the technique used, dataset, evaluation metrics, and reported results.
 
-| Study | Technique | Dataset | Key Metrics | Reported Result |
-|---|---|---|---|---|
-| Anoop et al. (2025) | k-Anonymity | UCI Adult | Accuracy, Re-identification Risk | 82.5% accuracy and 4.2% re-identification risk |
-| Anoop et al. (2025) | Differential Privacy | UCI Adult | Accuracy, Re-identification Risk | 70.6% accuracy and 0.8% re-identification risk |
-| Shathi et al. (2026) | Anonymization + Generative Methods | UCI Adult | NCP, Privacy Budget (ε) | High utility at ε = 1.0 |
-| Chen et al. (2025) | Personalized Differential Privacy | U.S. Census, Graph Data | RMSE, ARE | Up to 14x utility improvement |
-| Alvarez and Kim (2026) | Compressed Differential Privacy | Smart Grid Telemetry | Communication Reduction, Privacy Budget | 73% reduction in communication data with ε ≤ 1.5 |
-| Wen and Ye (2025) | Differential Privacy + AES | LLM Data | SIRR, Training Time, Latency | 3.8% sensitive information re-identification rate |
-| Zhou and Zhang (2025) | Differential Privacy | Financial Data | Accuracy, Privacy Leakage | 93.1% accuracy and 0.85% privacy leakage |
+| Technique | Study | Dataset | Key Metric(s) | Reported Result | Limitation for Direct Comparison |
+|---|---|---|---|---|---|
+| k-Anonymity | Anoop et al. (2025) | UCI Adult | Accuracy, re-identification risk | 82.5% accuracy, 4.2% risk | Different experimental configuration |
+| Differential Privacy | Anoop et al. (2025) | UCI Adult | Accuracy, re-identification risk | 70.6% accuracy, 0.8% risk | Different privacy mechanism and settings |
+| Anonymization + Generative | Shathi et al. (2026) | UCI Adult | NCP, ε | High utility at ε = 1.0 | Uses generative modelling and different metrics |
+| Personalized DP | Chen et al. (2025) | Census, graph data | RMSE, ARE | Up to 14× utility improvement | Different datasets and evaluation metrics |
 
 ## Main Findings
 
