@@ -15,10 +15,10 @@ The studies in Chapter 2 use different datasets to test their privacy-preserving
 
 ## UCI Adult Census Income Dataset
 
-The UCI Adult Census Income dataset is the main dataset used in this research. It contains information such as age, education, occupation, marital status, and income.
+- The UCI Adult Census Income dataset is the main dataset used in this research. It contains information such as age, education, occupation, marital status, and income.
 
-This dataset is chosen because it has been used in previous studies on k-anonymity and Differential Privacy. It also makes it easier to compare the two techniques using the same data.
+- This dataset is chosen because it has been used in previous studies on k-anonymity and Differential Privacy. It also makes it easier to compare the two techniques using the same data.
 
-In this research, the original UCI Adult dataset is used first as the baseline. After that, k-anonymity and Differential Privacy are applied separately to the dataset.
+- In this research, the original UCI Adult dataset is used first as the baseline. After that, k-anonymity and Differential Privacy are applied separately to the dataset.
 
 The results from both techniques will then be compared using the selected evaluation metrics.
