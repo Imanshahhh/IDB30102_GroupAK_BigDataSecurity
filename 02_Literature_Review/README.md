@@ -23,21 +23,21 @@ The studies were reviewed based on the techniques used, datasets, evaluation met
 
 ## k-Anonymity
 
-k-Anonymity is used to reduce the chance of identifying an individual from a dataset. It works by making records less distinguishable based on selected quasi-identifiers.
+- k-Anonymity is used to reduce the chance of identifying an individual from a dataset. It works by making records less distinguishable based on selected quasi-identifiers.
 
-Previous studies show that k-anonymity is a practical method and can retain useful information in the dataset. However, stronger anonymization may cause information loss and reduce data utility. There may also still be some risk of re-identification.
+- Previous studies show that k-anonymity is a practical method and can retain useful information in the dataset. However, stronger anonymization may cause information loss and reduce data utility. There may also still be some risk of re-identification.
 
-Other methods such as l-diversity and Mondrian k-anonymity have been studied to improve some limitations of basic k-anonymity. These methods are included in the literature review as supporting studies.
+- Other methods such as l-diversity and Mondrian k-anonymity have been studied to improve some limitations of basic k-anonymity. These methods are included in the literature review as supporting studies.
 
 For this research, standard k-anonymity is implemented using generalization and suppression.
 
 ## Differential Privacy
 
-Differential Privacy protects sensitive information by adding controlled noise to data or query results. The privacy level is controlled using a privacy budget represented by `ε`.
+- Differential Privacy protects sensitive information by adding controlled noise to data or query results. The privacy level is controlled using a privacy budget represented by `ε`.
 
-Previous studies show that differential privacy can provide stronger formal privacy protection. However, more noise can affect data utility and classification accuracy.
+- Previous studies show that differential privacy can provide stronger formal privacy protection. However, more noise can affect data utility and classification accuracy.
 
-Several variations of differential privacy have also been proposed to improve the balance between privacy and utility. These approaches are reviewed as supporting literature.
+- Several variations of differential privacy have also been proposed to improve the balance between privacy and utility. These approaches are reviewed as supporting literature.
 
 For this research, standard differential privacy is implemented using Laplace noise with `ε = 1.0`.
 
@@ -62,9 +62,9 @@ The UCI Adult Census Income dataset is especially relevant to this research beca
 
 ## Research Gap
 
-The literature shows a clear trade-off between privacy protection and data utility. Higher privacy protection may reduce accuracy or increase information loss.
+- The literature shows a clear trade-off between privacy protection and data utility. Higher privacy protection may reduce accuracy or increase information loss.
 
-Many studies focus on only one technique, while others use different datasets, experimental conditions, or evaluation metrics. This makes direct comparison between k-anonymity and differential privacy more difficult.
+- Many studies focus on only one technique, while others use different datasets, experimental conditions, or evaluation metrics. This makes direct comparison between k-anonymity and differential privacy more difficult.
 
 This research addresses the gap by applying **k-anonymity and differential privacy to the same UCI Adult Census Income dataset**. Both techniques are evaluated using the same criteria:
 
