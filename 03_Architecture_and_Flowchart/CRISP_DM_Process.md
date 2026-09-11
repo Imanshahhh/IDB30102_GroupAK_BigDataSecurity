@@ -1,4 +1,4 @@
-# CRISP-DM Process #
+# CRISP-DM Process
 
 This research uses CRISP-DM to organize the steps of the study. There are six phases used in this research.
 
@@ -9,7 +9,7 @@ The first phase focuses on the research problem. In this study, the problem is t
 The comparison uses three main criteria:
 
 - Accuracy
-- Re-identification Risk
+- Uniqueness-Based Risk Indicator
 - Execution Time
 
 ## 2. Data Understanding
@@ -18,29 +18,31 @@ This phase focuses on the UCI Adult Census Income dataset. The dataset is studie
 
 ## 3. Data Preparation
 
-- The dataset is prepared before applying the two techniques.
+The dataset is prepared before applying the two privacy-preserving techniques.
 
-- For k-Anonymity, generalization is applied using a `k = 3` configuration. For Differential Privacy, Laplace noise is added using `ε = 1.0`.
+- For k-Anonymity, generalization and suppression are applied using a `k = 3` configuration.
+- For Differential Privacy, Laplace noise is added using `ε = 1.0`.
 
 ## 4. Modelling
 
 - k-Anonymity and Differential Privacy are applied separately to the same dataset.
-
 - Each technique produces a processed version of the dataset for comparison.
 
 ## 5. Evaluation
 
-- The results are compared with the original dataset.
+The processed datasets are evaluated against the original, unprotected dataset.
 
 The main evaluation metrics are:
 
-- Accuracy
-- Re-identification Risk
+- Classification Accuracy
+- Uniqueness-Based Risk Indicator
 - Execution Time
 
 ## 6. Deployment
 
-The final results are organised and presented as a comparison between k-Anonymity and Differential Privacy.
+The final results are organised and presented as a comparative evaluation of k-Anonymity and Differential Privacy.
+
+The findings are documented in the research report and supported by the group's GitHub repository.
 
 ## CRISP-DM Process Flowchart
 
