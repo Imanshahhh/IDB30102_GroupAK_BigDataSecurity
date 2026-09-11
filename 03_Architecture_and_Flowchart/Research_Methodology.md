@@ -1,8 +1,8 @@
-# Research Methodology
+# Research Methodology #
 
-This research uses a data-driven approach based on the CRISP-DM methodology.
+- This research uses a data-driven approach based on the CRISP-DM methodology.
 
-The main purpose of this research is to compare k-Anonymity and Differential Privacy using the UCI Adult Census Income dataset.
+- The main purpose of this research is to compare k-Anonymity and Differential Privacy using the UCI Adult Census Income dataset.
 
 The research follows six CRISP-DM phases:
 
@@ -15,7 +15,7 @@ The research follows six CRISP-DM phases:
 
 ## 1. Business Understanding
 
-This phase focuses on the research problem and the criteria used to compare k-Anonymity and Differential Privacy.
+- This phase focuses on the research problem and the criteria used to compare k-Anonymity and Differential Privacy.
 
 The main criteria are:
 
@@ -25,29 +25,29 @@ The main criteria are:
 
 ## 2. Data Understanding
 
-The UCI Adult Census Income dataset is studied to understand the data and identify the attributes that are related to the privacy evaluation.
+- The UCI Adult Census Income dataset is studied to understand the data and identify the attributes that are related to the privacy evaluation.
 
-The dataset is also compared with its use in previous studies.
+- The dataset is also compared with its use in previous studies.
 
 ## 3. Data Preparation
 
-The dataset is prepared using the custom Python script `anonymization_framework.py`.
+- The dataset is prepared using the custom Python script `anonymization_framework.py`.
 
-For k-Anonymity, generalization is applied using a `k = 3` configuration. Age is grouped into ranges and marital status is also generalized.
+- For k-Anonymity, generalization is applied using a `k = 3` configuration. Age is grouped into ranges and marital status is also generalized.
 
-For Differential Privacy, Laplace noise is added using a privacy budget of `ε = 1.0`.
+- For Differential Privacy, Laplace noise is added using a privacy budget of `ε = 1.0`.
 
-Two processed versions of the dataset are produced for the comparison.
+- Two processed versions of the dataset are produced for the comparison.
 
 ## 4. Modelling
 
-k-Anonymity and Differential Privacy are applied separately to the same dataset.
+- k-Anonymity and Differential Privacy are applied separately to the same dataset.
 
-The configurations used for both techniques are based on the methods discussed in the literature review.
+- The configurations used for both techniques are based on the methods discussed in the literature review.
 
 ## 5. Evaluation
 
-The two techniques are compared with the original UCI Adult dataset.
+- The two techniques are compared with the original UCI Adult dataset.
 
 The evaluation uses:
 
@@ -59,6 +59,6 @@ The results are also compared with the general direction of the results reported
 
 ## 6. Deployment
 
-The final results are organised into a comparative evaluation.
+- The final results are organised into a comparative evaluation.
 
-The findings are used to show the differences between k-Anonymity and Differential Privacy in terms of privacy protection, data utility, and processing time.
+- The findings are used to show the differences between k-Anonymity and Differential Privacy in terms of privacy protection, data utility, and processing time.
