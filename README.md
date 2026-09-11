@@ -16,10 +16,10 @@
 
 | Name                                          | Student ID  | Role / Contribution                        |
 | :-------------------------------------------- | :---------- | :----------------------------------------- |
-| **Muhammad Aidil Mukhriz Bin Khairol Afandi** | 52215226072 | Literature Review & Framework Design       |
-| **Nurul Nadia Binti Khairuddin**              | 52215226154 | Methodology & Architecture Diagram         |
-| **Nadiah Izzati Binti Noor Aziddin**          | 52215226024 | Data Preparation & System Evaluation       |
-| **Haiqal Imanshah Bin Hazmad Balkish**        | 52215125083 | Source Code Implementation & Documentation |
+| **Muhammad Aidil Mukhriz Bin Khairol Afandi** | 52215226072 | Source Code Implementation  & Results     |
+| **Nurul Nadia Binti Khairuddin**              | 52215226154 | Methodology & Research Papers  |
+| **Nadiah Izzati Binti Noor Aziddin**          | 52215226024 | Architecture Diagram & Literature Overview |
+| **Haiqal Imanshah Bin Hazmad Balkish**        | 52215125083 | Research Implementation & Documentation |
 
 ---
 
