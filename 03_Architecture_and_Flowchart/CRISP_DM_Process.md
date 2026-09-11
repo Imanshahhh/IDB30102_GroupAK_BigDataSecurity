@@ -18,19 +18,19 @@ This phase focuses on the UCI Adult Census Income dataset. The dataset is studie
 
 ## 3. Data Preparation
 
-The dataset is prepared before applying the two techniques.
+- The dataset is prepared before applying the two techniques.
 
-For k-Anonymity, generalization is applied using a `k = 3` configuration. For Differential Privacy, Laplace noise is added using `ε = 1.0`.
+- For k-Anonymity, generalization is applied using a `k = 3` configuration. For Differential Privacy, Laplace noise is added using `ε = 1.0`.
 
 ## 4. Modelling
 
-k-Anonymity and Differential Privacy are applied separately to the same dataset.
+- k-Anonymity and Differential Privacy are applied separately to the same dataset.
 
-Each technique produces a processed version of the dataset for comparison.
+- Each technique produces a processed version of the dataset for comparison.
 
 ## 5. Evaluation
 
-The results are compared with the original dataset.
+- The results are compared with the original dataset.
 
 The main evaluation metrics are:
 
