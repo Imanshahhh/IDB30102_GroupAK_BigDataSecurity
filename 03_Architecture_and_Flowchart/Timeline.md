@@ -12,7 +12,6 @@ This timeline shows the planned activities for this research from Week 1 to Week
 | **Modelling** | Apply the selected techniques and prepare the comparison. | | | | ████ | | | |
 | **Evaluation** | Compare accuracy, re-identification risk, and execution time. | | | | | ████ | ████ | |
 | **Deployment** | Finalize the comparative evaluation and organize the results. | | | | | | ████ | ████ |
-| **Documentation** | Complete the research report and organize the supporting materials and GitHub repository. | | | | | | ████ | ████ |
 
 ## Table 3.3 Carta Gantt
 
